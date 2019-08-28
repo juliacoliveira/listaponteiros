@@ -1,0 +1,1 @@
+17) Implementando os códigos para mostrarem o tempo de funcionamento da função, foi descoberto que utilizando a função qsort rodou 0.026 segundos mais rápido do que utilizando o qsort criado por mim (para um vetor de 5 elementos). 

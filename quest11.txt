@@ -1,0 +1,1 @@
+11)	As respostas oferecidas pelo compilador estão de acordo com as que eu encontrei, exceto quando se tratou de valores inteiros, pois o compilador considerou como se um inteiro fosse 4 bytes e não 2, como foi ofertado na questão anterior. 

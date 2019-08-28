@@ -1,0 +1,1 @@
+7)	A primeira expressão (*(pulo + 2)) vai referenciar o terceiro elemento de um vetor. Pois o quando (pulo + 2) é o vetor pulo[0] pulando dois elementos, que será o pulo [2], e do 0 até o 2 são três elementos. 

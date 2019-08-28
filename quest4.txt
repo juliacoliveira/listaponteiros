@@ -1,0 +1,1 @@
+4)	A única expressão de atribuição que seria ilegal é i = (*&)j, pois dentro das aspas estaria pegando um valor de um endereço ainda n definido. 

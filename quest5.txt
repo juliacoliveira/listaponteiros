@@ -1,0 +1,70 @@
+5)	Para uma melhor compreensão, dividiu-se essa questão para melhor demonstrar o entendimento de cada passo, sendo mostrado o resultado compilado no final. 
+
+a)	Sendo int    valor e  int   *p1;  o código:
+valor = 10;	
+ p1 = &valor;
+*p1 = 20;
+             printf("%d \n", valor);
+	Me retornaria 20, pois na primeira linha a variável valor recebe 10, depois o ponteiro p1 apontaria para a variável valor e, logo em seguida, o local que o ponteiro estava apontando, dito anteriormente, receberia 20. Então a variável valor tinha 20 armazenado.
+b)	Sendo float  temp e float *p2;  o código:
+	temp = 26.5;
+ 	 p2 = &temp;
+  	*p2 = 29.0;
+  	printf("%.1f \n", temp);
+	Me retornaria 29.0, pois na primeira linha a variável temp recebe 26.5, depois o ponteiro p2 apontaria para a variável temp e, logo em seguida, o local que o ponteiro estava apontando, dito anteriormente, receberia 29.0. Então a variável temp tinha 29.0 armazenado.
+c)	Sendo char   aux,  char  *nome = "Ponteiros" e char  *p3;  o código:
+	p3 = &nome[0];
+  	aux = *p3;
+  	printf("%c \n", aux);
+	Me retornaria o caractere P, pois na primeira linha o ponteiro p3 aponta para o primeiro elemento que o ponteiro nome aponta e, logo em seguida, a variável aux recebe o valor correspondente ao local onde o ponteiro p3 estava apontando, ou seja, receberia o caractere P. 
+d)	Sendo char   aux,  char  *nome = "Ponteiros" e char  *p3;  o código:
+	p3 = &nome[4];
+  	aux = *p3;
+ 	 printf("%c \n", aux).
+	Me retornaria o caractere e, pois na primeira linha o ponteiro p3 aponta para o quinto elemento que o ponteiro nome aponta e, logo em seguida, a variável aux recebe o valor correspondente ao local onde o ponteiro p3 estava apontando, ou seja, receberia o caractere e. 
+e)	Sendo char  *nome = "Ponteiros" e char  *p3;  o código:
+	p3 = nome;
+  	printf("%c \n", *p3);
+	Me retornaria o caractere P, pois na primeira linha o ponteiro p3 aponta para o primeiro elemento que o ponteiro nome aponta, ou seja, receberia o caractere e.
+f)	Sendo char  *nome = "Ponteiros" e char  *p3;  o código:
+	p3 = p3 + 4;
+  	printf("%c \n", *p3);
+	Me retornaria o caractere e, pois na primeira linha o ponteiro p3 aponta para o primeiro elemento que o ponteiro nome aponta e pula 4 casas, ou seja, receberia o caractere e.
+g)	Sendo char  *nome = "Ponteiros" e char  *p3;  o código:
+	p3--;
+    printf("%c \n", *p3);
+	Me retornaria o caractere t, pois na primeira linha o ponteiro p3, que estava apontando para o caractere e, volta uma casa e passa a apontar para o caractere t.
+h)	Sendo int    idade,  int    vetor[3] e  int   *p4;  o código:
+  vetor[0] = 31;
+  vetor[1] = 45;
+  vetor[2] = 27;
+  p4 = vetor;
+  idade = *p4;
+  printf("%d \n", idade);
+	Me retornaria o valor 31, pois nas 3 primeiras linhas o vetor está recebendo três valores para distintos para as 3 primeiras casas, depois o ponteiro p4 está apontando para a casa zero do vetor e, logo em seguida, a variável idade recebe o valor para onde o ponteiro estava apontando. 
+i)	Sendo int   *p4 e int   *p5 o código:
+	p5 = p4 + 1;
+    idade = *p5;
+    printf("%d \n", idade);
+	Me retornaria o valor 45, pois, primeiramente, o ponteiro p4 já estava apontando para o vetor[0], então na primeira linha o ponteiro p5 está apontando para uma casa depois do que o p4 estava apontando, ou seja, no vetor[1], que foi definido anteriormente como tendo o valor 45. Esse valor foi então colocado na variável idade.
+j)	Sendo int   *p4 e int   *p5 o código:
+    p4 = p5 + 1;
+    idade = *p4;
+    printf("%d \n", idade);
+	Me retornaria o valor 27, pois, primeiramente, o ponteiro p5 já estava apontando para o vetor[1], então na primeira linha o ponteiro p4 está apontando para uma casa depois do que o p5 estava apontando, ou seja, no vetor[2], que foi definido anteriormente como tendo o valor 27. Esse valor foi então colocado na variável idade.
+k)	Sendo int   *p4 e int   *p5 o código:
+    p4 = p4 - 2;
+    idade = *p4;
+    printf("%d \n", idade);
+	Me retornaria o valor 31, pois, primeiramente, o ponteiro p4 já estava apontando para o vetor[2], então agora na primeira linha o ponteiro p4 está apontando para duas casas antes do que ele estava apontando inicialmente, ou seja, no vetor[0], que foi definido anteriormente como tendo o valor 31. Esse valor foi então colocado na variável idade.
+
+l)	Sendo int   *p4 e int   *p5 o código:
+    p5 = &vetor[2] - 1;
+    printf("%d \n", *p5);
+	Me retornaria o valor 45, pois o ponteiro p5 vai apontar para o vetor[2] e voltar uma casa, ou seja, vai apontar para o vetor [1], que foi definido anteriormente como tendo o valor 45. 
+
+m)	Sendo int   *p4 e int   *p5 o código:
+	p5++;
+  	printf("%d \n", *p5);
+	Me retornaria o valor 27, pois o ponteiro p5, que apontava para o vetor[1], vai apontar uma casa depois, ou seja, vai para o vetor [2], que foi definido anteriormente como tendo o valor 27. 
+

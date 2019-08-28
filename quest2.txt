@@ -1,0 +1,8 @@
+2)	Para:   int i=3,j=5; int *p, *q; p = &i; q=&j; 
+	a)	Como foi definido ao início que p recebeu o valor do endereço de i (p =&i), então ao fazer a comparação entre p e &i (p = = &i;) tem que dar igual a 1, visto que são iguais.
+
+	b)	Como p está apontando para o endereço de i e q está apontando para o endereço de j, ao fazermos *p - *q, encontraremos a subtração entre valor que o p está apontando e o que o q está apontando, ou seja: i – j = 3 – 5 = -2.
+
+	c)	Como *(&p) dereferencia &p (acessa o valor que se encontra nesse endereço), então o resultado vai ser o valor que p aponta (&i) e *(*(&p)) vai dereferenciar mais uma vez, então o resultado é o valor de i, ou seja, 3.
+
+	d)	Como *p e *q são os valores que se encontram onde cada ponteiro está apontando, então o primeiro é 3 e o último é 5. Com isso, 3 - *p/(*q) + 7 será igual a 3 - (3/5) + 7 que da 9.4, porém estamos tratando de números inteiros, então o resultado seria 9. Porém ao rodar o código, percebi que o compilador pega o resultado da fração (0.6) e ignora o que vem depois da vírgula, então o resultado vira 10. 

@@ -1,0 +1,1 @@
+9)	O primeiro vai mostrar o valor correspondente a cada elemento do vetor e o segundo vai mostrar o endereço de cada elemento. 

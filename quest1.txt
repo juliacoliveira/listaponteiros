@@ -1,0 +1,1 @@
+1)	Ponteiro ajuda a tornar o código mais compacto e eficiente.
